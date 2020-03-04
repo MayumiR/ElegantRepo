@@ -17,6 +17,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    dexOptions {
+        javaMaxHeapSize "8g"
+    }
 }
 
 dependencies {
@@ -34,4 +37,9 @@ dependencies {
     // volley http library
     implementation 'com.android.volley:volley:1.1.0'
     implementation 'com.google.code.gson:gson:2.6.2'
+
+    //facebook sdk
+    implementation 'com.facebook.android:facebook-android-sdk:4.31.0'
+    //material design
+    implementation 'com.google.android.material:material:1.0.0'
 }
